@@ -1,0 +1,55 @@
+.switch {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  background-color: #5a6472be ;
+  border-radius: 20px;
+  user-select: none;
+  cursor: pointer;
+  &--sidebar{
+    position: absolute !important;
+    bottom: 50px;
+    left: 5px;
+  }
+  &--login{
+
+  }
+  span {
+    flex: 1;
+    display: inline-block;
+    padding: 0 3px;
+    color: #fff;
+  }
+  .Moon,
+  .Sun {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: purple;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border: 3px solid rgb(18, 163, 132);
+    display: none;
+    &:active,
+    &:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 7px rgb(4, 214, 230);
+    }
+  }
+  .Sun {
+    color: yellow;
+    background-color: black;
+    display: block;
+  }
+  &--dark {
+    flex-direction: row-reverse;
+    .Moon {
+      display: block;
+    }
+    .Sun {
+      display: none;
+    }
+  }
+}

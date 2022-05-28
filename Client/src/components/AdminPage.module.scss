@@ -1,0 +1,35 @@
+@use './Base.module.scss' as base;
+
+.Layout {
+  &__side
+  {
+      height: 100vh;
+      overflow: hidden;
+      max-width: 600px !important;
+  }
+  &__header{
+      &--dark
+      {
+        border-bottom: 1px base.$color-dark solid;
+      }
+      &--light
+      {
+        border-bottom: 1px base.$color-light solid;
+      }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50;
+    &--dark {
+      border-top: 1px base.$color-dark solid;
+      color: base.$color-dark !important;
+    }
+    &--light {
+      border-top: 1px base.$color-light solid;
+      color: base.$color-light !important;
+    }
+  }
+}
+

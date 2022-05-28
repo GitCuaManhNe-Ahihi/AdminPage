@@ -1,0 +1,106 @@
+@use "../Base.module.scss" as base;
+.login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__header {
+    height: 20px;
+    padding: 0 100px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+  }
+  &__card {
+    width: 500px;
+    height: 600px;
+    box-shadow: 0px 0px 10px rgb(61, 59, 59);
+    border-radius: 10px;
+    padding: 20px;
+    &--light {
+      background: linear-gradient(to right, #f665f6ec, #ebfd8594);
+    }
+    &--dark {
+      background: white;
+    }
+  }
+}
+.login-header {
+    &__theme {
+        padding: 0 10px;
+        border-right: 1px solid #ccc;
+    }
+  &__language {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    width: 200px;
+    font-weight: bold;
+    &--dark {
+      color: base.$color-dark;
+    }
+    &--light {
+      color: base.$color-light;
+    }
+    p{
+      margin: 0 0 1px 0;
+    }
+  }
+}
+.button {
+  width: 200px;
+  font-size: 20px;
+}
+.password-field {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  &__eyes {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+}
+// social
+
+.social {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  margin: auto;
+  justify-content: space-between;
+  height: 30px;
+}
+.row {
+  margin-top: 20px;
+  &:last-child {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px;
+    a {
+      color: rgb(13, 130, 177);
+      text-transform: capitalize;
+      text-decoration: underline;
+      font-size: large;
+      font-weight: bold;
+      user-select: none;
+    }
+  }
+}
+.errorMessage {
+  color: red;
+  font-size: 12px;
+  margin-top: 10px;
+}
+

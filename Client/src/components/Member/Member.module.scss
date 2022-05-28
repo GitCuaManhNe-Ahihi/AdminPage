@@ -1,0 +1,39 @@
+.containerItem {
+  height: 50px;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.356);
+  border-radius: 3px;
+  margin: 10px auto;
+  &:nth-child(odd) {
+    background-color: #fafafa;
+    opacity: 0.9;
+  }
+  p {
+    display: block;
+    margin: 0;
+  }
+  img {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+.notifyDone,
+.confirm {
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}

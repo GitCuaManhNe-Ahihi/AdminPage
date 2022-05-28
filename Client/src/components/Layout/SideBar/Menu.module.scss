@@ -1,0 +1,33 @@
+.icon-menu {
+  font-size: 3rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+  &--dark {
+    color: #fff;
+  }
+}
+
+.menu-item {
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+  width: 300px;
+  &__link {
+    width: 80%;
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    margin-left: 15px;
+  }
+}
+.text {
+  flex: 1;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+

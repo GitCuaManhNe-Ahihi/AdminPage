@@ -1,0 +1,18 @@
+.background-color {
+    &--dark {
+        background-color: #121212 !important;
+    }
+    &--light {
+        background-color: #f5f5f5 !important;
+    }
+}
+.text-color{
+    &--dark {
+        color: #fff !important;
+    }
+    &--light {
+        color: #000 !important;
+    }
+}
+$color-dark: white;
+$color-light: black;
