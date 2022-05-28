@@ -4,7 +4,7 @@ export const convertBlobtoUrl = (url, public_id) => {
   let iDocument = iWindow?.document;
   let arr = iDocument?.getElementsByTagName("img");
   for (let i = 0; i < arr?.length; i++) {
-    if (arr[i].src.includes("localhost:3000")) {
+    if (arr[i].src.includes("admin-page-three.vercel.app")) {
       arr[i].src = url[i];
     }
   }
