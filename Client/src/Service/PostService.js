@@ -17,7 +17,7 @@ export const postService = async (...api) => {
 export const yourPostService = async (id) => {
   return new Promise((resolve, reject) => {
     axiosInstance
-      .get("article/own", {params: {id}})
+      .get("article/own", {params: {id:id}})
       .then((res) => {
         resolve(res.data.data);
       })

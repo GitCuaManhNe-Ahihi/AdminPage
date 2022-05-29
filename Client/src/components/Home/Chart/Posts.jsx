@@ -28,7 +28,9 @@ const dataOnceMonth = (statistical,genresId) => {
   for (let i = 1; i <= 12; i++) {
     let d = 0;
     statistical.map((item) => 
-      item.month === i && item.genresId == genresId ? d = item.count : 0
+    {
+      item.month == i && item.genresId == genresId ? d = item.count : 0
+    }
     );
     data.push(d);
   }
@@ -38,7 +40,12 @@ const dataAllMonth = (statistical) => {
   const data = [];
   for (let i = 1; i <= 12; i++) {
     let d = 0;
-   statistical.map((item) => item.month === i ? d += item.count : 0);
+   statistical.map((item) => { 
+    if(item.month == i)
+    {
+      d += item.count
+    }
+  });
     data.push(d);
   }
   return data;
@@ -47,6 +54,7 @@ const dataAllMonth = (statistical) => {
 export default function Posts(props) {
     const { t } = useContext(TranslateContext);
     const {statisticalMoth} = props
+
     const options = {
         responsive: true,
         plugins: {
