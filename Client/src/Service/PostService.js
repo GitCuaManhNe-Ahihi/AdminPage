@@ -1,6 +1,6 @@
 import axios from "axios";
 const axiosInstance = axios.create({
-  baseURL: "https://baochicuocsong.herokuapp.com/api/v1/",
+  baseURL: "http://localhost:6887/api/v1/",
 });
 export const postService = async (...api) => {
   return new Promise((resolve, reject) => {

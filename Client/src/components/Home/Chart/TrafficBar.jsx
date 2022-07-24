@@ -32,20 +32,7 @@ export const options = {
   },
 };
 
-const labels = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+const labels = ['100', '200', '300', '400', '500'];
 
 import { Line } from "react-chartjs-2";
 export default function TrafficBar() {
@@ -55,7 +42,7 @@ export default function TrafficBar() {
     datasets: [
       {
         label: t("traffic"),
-        data: [65, 59, 80, 81, 56, 55, 40, 65, 59, 80, 81, 100],
+        data: [0.17, 0.20, 0.22, 0.29, 83.44],
         borderColor: "yellow",
         backgroundColor: "yellow",
       },
