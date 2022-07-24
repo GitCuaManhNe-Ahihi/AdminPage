@@ -1,6 +1,6 @@
 import axios from "axios";
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:6887/api/v1/",
+  baseURL: "https://baochicuocsong.herokuapp.com/api/v1/",
 });
 
 export const statisticalPostOfUser = async (id) => {
