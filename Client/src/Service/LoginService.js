@@ -11,7 +11,7 @@ export const loginService = async (data) => {
         resolve({accesstoken:res.headers["authorization"]});
       })
       .catch((err) => {
-        reject(err.response.data.message);
+        reject(err.response?.data?.message);
       });
   });
 };
